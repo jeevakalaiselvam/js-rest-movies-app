@@ -10,13 +10,18 @@ body {
     font-family: "Rubik", sans-serif;
 }
 
-.main {
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .movie {
     border-radius: 3px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.8);
     width: 300px;
+    margin: 2rem;
 }
 
 .movie img {
@@ -39,4 +44,17 @@ body {
     background-color: #22254b;
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green {
+    color: rgb(39, 189, 39);
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: rgb(189, 42, 42);
 }
