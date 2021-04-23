@@ -11,4 +11,4 @@ This application shows you information about popular movies using REST API
 ![Search for movies](screens/screen3.png)
 
 # Live Link
-Check the live version here <https://jeevakalaiselvam.github.io/simple-quiz-app-js/>
+Check the live version here <https://jeevakalaiselvam.github.io/rest-movies-js-app/>
