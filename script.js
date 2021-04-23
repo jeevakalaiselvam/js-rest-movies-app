@@ -67,7 +67,9 @@ function showMovies(movies) {
         const img = document.createElement("div");
         img.classList.add("movie");
 
-        const { poster_path, original_title, vote_average } = movie;
+        const { poster_path, original_title, vote_average, overview } = movie;
+
+        if (poster_path == null) return;
 
         img.innerHTML = `
             <img src="${IMGPATH + poster_path}" alt="">
@@ -76,7 +78,9 @@ function showMovies(movies) {
                 <span class="${getClassByRating(
                     vote_average
                 )}">${vote_average}</span>
-            </div>`;
+            </div>
+            <div class="overview">${overview}</div>
+            `;
 
         main.appendChild(img);
     });
